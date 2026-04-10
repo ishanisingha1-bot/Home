@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+    .outer-box {
+  width: 1001px;
+  height: 500px;
+  border: 2px solid #ec55d3;
+  background: transparent;
+  position: relative;
+  margin: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  overflow: hidden; 
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  background-color: #ec55d3;
+  
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: transform 1s ease;
+  z-index: 2; 
+}
+
+.inner-box:hover {
+  transform: rotate(45deg);
+}
+
+
+.content-area {
+  padding: 10px;
+  
+  margin-right: 85px; 
+}
+
+
+.text-blue { color: #2980b9; }
+.text-red { color: #e74c3c; }
+.text-green { color: #27ae60; }
+
+
+</style>
+<div class="outer-box">
+  <div class="inner-box">About_us</div>
+
+  <div class="content-area">
+    <p class="text-blue">What is web development?<br>
+    Web development is the process of creating, building, and maintaining websites and web applications that run online via browsers. It involves a mix of front-end (user-facing layout/design) and back-end (server-side logic, databases) coding to ensure functionality, performance, and user experience. </p>
+    <p class="text-red">What we do:
+        "We demystify web development."
+Our mission is to take the jargon out of coding and make web development accessible to everyone—from complete beginners to intermediate developers looking to sharpen their skills. 
+    </p>
+    <p class="text-green">This is the third paragraph.</p>
+  </div>
+</div><head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
